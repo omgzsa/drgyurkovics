@@ -10,7 +10,7 @@
     </div>
     <!-- nuxt-page-slot -->
     <div
-      class="grid row-span-5 pt-8 site-padding md:col-start-3 md:col-end-11 place-content-start md:place-content-evenly"
+      class="grid row-span-5 site-padding md:col-start-3 md:col-end-11 place-content-start"
     >
       <slot />
     </div>

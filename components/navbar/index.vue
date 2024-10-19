@@ -22,7 +22,7 @@ const navItems = ref([
   {
     name: 'Partnerek',
     icon: 'fa:paragraph',
-    path: '/partners',
+    path: '/partnerek',
   },
   {
     name: 'Média',

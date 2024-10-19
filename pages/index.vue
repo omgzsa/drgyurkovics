@@ -1,5 +1,5 @@
 <script setup>
-const bgImage = 'hero-lg.webp';
+const bgImage = 'drgybence.jpg';
 const date = new Date();
 
 const formattedDate = computed(() => {
@@ -12,23 +12,18 @@ const formattedDate = computed(() => {
 
   return date.toLocaleDateString('hu-HU', options);
 });
-
-// console.log(formattedDate.value);
 </script>
 
 <template>
-  <div class="flex flex-col space-y-10">
-    <!-- <div class="absolute -z-10">
-      <img :src="useAsset(`images/${bgImage}`)" alt="" />
-    </div> -->
-    <div class="flex flex-col">
+  <div class="flex flex-col">
+    <div class="flex flex-col pt-8">
       <span
         class="mb-6 text-lg font-bold tracking-wide uppercase text-warning-100"
         >Üdvözlöm az oldalamon!</span
       >
-      <h1>LL.M. dr. Gyurkovics Bence</h1>
+      <h1 class="mb-6">LL.M. dr. Gyurkovics Bence</h1>
       <span
-        class="my-6 text-sm font-normal tracking-widest uppercase lg:text-base text-warning-100"
+        class="mb-6 text-sm font-normal tracking-widest uppercase lg:text-base text-warning-100"
         >&mdash; munkajogi szakjogász</span
       >
     </div>

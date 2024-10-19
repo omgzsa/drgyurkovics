@@ -40,6 +40,7 @@ const fields = ref([
 
 <template>
   <div class="space-y-6">
+    <h1>Szakterületeim</h1>
     <FieldsItem
       v-for="field in fields"
       :key="field.id"

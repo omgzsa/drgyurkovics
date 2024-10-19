@@ -1,5 +1,6 @@
 <template>
   <div class="space-y-6">
+    <h1>Rólam</h1>
     <p>
       2011-ben végeztem Győrött, a Széchenyi István Egyetem Deák Ferenc Állam-
       és Jogtudományi Karán jogász szakon. Az egyetem elvégzését követően

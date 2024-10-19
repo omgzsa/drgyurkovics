@@ -16,18 +16,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  // activeRoute: {
-  //   type: String,
-  //   required: true,
-  // },
   isActive: {
     type: Boolean,
   },
 });
-
-// const activeLinkClass = computed(() => {
-//   return props.activeRoute === props.path ? 'opacity-100' : '';
-// });
 </script>
 
 <template>
@@ -49,7 +41,8 @@ const props = defineProps({
         {{ name }}
       </span>
       <span
-        class="absolute bottom-0 -m-4 translate-y-1/2 rounded px-2 py-1.5 text-xs font-bold opacity-0 group-hover:opacity-100 md:hidden inline-block"
+        class="absolute bottom-0 -m-4 translate-y-1/2 rounded px-2 py-1.5 text-[11px] font-bold opacity-0 group-hover:opacity-100 md:hidden inline-block"
+        :class="{ 'opacity-100': isActive }"
       >
         {{ name }}
       </span>

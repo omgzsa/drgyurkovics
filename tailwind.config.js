@@ -36,6 +36,9 @@ module.exports = {
           200: 'var(--clr-warning-2)',
         },
       },
+      screens: {
+        xs: '420px',
+      },
     },
   },
   variants: {},

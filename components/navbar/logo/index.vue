@@ -5,11 +5,11 @@ defineProps(['logo']);
 <template>
   <NuxtLink to="/">
     <span
-      class="grid h-12 w-12 place-content-center bg-gray-100 text-xs text-gray-600 shadow-sm"
+      class="grid w-12 h-12 text-xs text-gray-600 bg-gray-100 shadow-sm place-content-center"
     >
-      <img
+      <NuxtImg
         class="p-1"
-        :src="useAsset(`images/logo/${logo}`)"
+        :src="`../../${logo}`"
         alt="dr. Gyurkovics Bence brand-logó"
       />
     </span>

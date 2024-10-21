@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/google-fonts',
     '@nuxt/image',
+    '@vueuse/nuxt',
   ],
 
   // runtimeConfig: {

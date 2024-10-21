@@ -1,9 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    head: {
+      titleTemplate: '%s | LL.M. dr. Gyurkovics Bence, ügyvéd',
+      htmlAttrs: {
+        lang: 'hu',
+      },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
     baseURL: '/',
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+
+  devtools: { enabled: true },
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -13,11 +23,10 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
 
-  // runtimeConfig: {
-  //   baseURL: process.env.BASE_URL || 'http://localhost:3000',
-  //   WEATHER_API_KEY: process.env.NUXT_WEATHER_API_KEY,
-  //   weatherURL: process.env.NUXT_WEATHER_API_URL,
-  // },
+  image: {
+    provider: 'netlify',
+  },
+  
   googleFonts: {
     prefetch: true,
     families: {
@@ -31,7 +40,6 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config.js',
   },
 
-  devtools: { enabled: true },
   postcss: {
     postcssOptions: {
       plugins: {

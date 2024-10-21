@@ -11,6 +11,8 @@
   --clr-secondary-3: rgba(224, 218, 203, 1);
   --clr-warning-1: rgba(107, 135, 182, 1);
   --clr-warning-2: rgba(182, 107, 119, 1);
+  --clr-scrollbar-bg: rgb(241, 241, 241);
+  --clr-scrollbar-thumb: rgba(182, 162, 107, 0.2);
 
   --ff-display: 'Merriweather', serif;
   --ff-body: 'Raleway', sans-serif;
@@ -26,7 +28,8 @@
   html,
   body,
   #__nuxt {
-    @apply transition-all bg-white text-primary-100;
+    /* @apply transition-all bg-white text-primary-100; */
+    @apply transition-all bg-white md:overflow-hidden text-primary-100;
   }
 
   img {
@@ -34,7 +37,7 @@
   }
 
   h1 {
-    @apply text-3xl md:text-4xl xl:text-6xl;
+    @apply text-3xl md:text-4xl xl:text-5xl;
   }
   h2 {
     @apply text-2xl md:text-3xl lg:text-4xl;
@@ -60,6 +63,22 @@
 
   a {
     @apply text-primary-300;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--clr-scrollbar-bg);
+    border-radius: 5px;
+    margin-block: 8rem;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--clr-scrollbar-thumb);
+    border-radius: 5px;
+    border: none;
   }
 }
 

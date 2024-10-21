@@ -1,15 +1,33 @@
+<script setup>
+const bgImage = 'drgybence.jpg';
+</script>
+
 <template>
-  <div class="space-y-6">
+  <div class="pt-8 space-y-6">
+    <NuxtImg 
+      :src="`../../${bgImage}`" 
+      alt="Dr. Gyurkovics Bence" 
+      class="z-0 block object-contain max-w-md mx-auto mb-6 rounded-full xl:hidden"
+    />
     <h1>Rólam</h1>
+    <div class="flex gap-6">
+      <p>
+        2011-ben végeztem Győrött, a Széchenyi István Egyetem Deák Ferenc Állam-
+        és Jogtudományi Karán jogász szakon. Az egyetem elvégzését követően
+        ügyvédjelöltként tevékenykedtem 2013. augusztus 31. napjáig. Ezen időszak
+        alatt megismerkedtem a klasszikus ügyvédi feladatok mindegyikével
+        (okiratszerkesztés, cégeljárás, követeléskezelés, civil szervezetekkel
+        kapcsolatos eljárások), és a peres eljárásokban is nagy gyakorlatra tettem
+        szert, mind a polgári, mind a büntető, mind pedig a közigazgatási jog
+        területén.
+      </p>
+      <NuxtImg 
+        :src="`../../${bgImage}`" 
+        alt="Dr. Gyurkovics Bence" 
+        class="z-0 hidden object-contain w-64 h-64 mx-auto mb-6 rounded-full xl:block"
+      />
+    </div>
     <p>
-      2011-ben végeztem Győrött, a Széchenyi István Egyetem Deák Ferenc Állam-
-      és Jogtudományi Karán jogász szakon. Az egyetem elvégzését követően
-      ügyvédjelöltként tevékenykedtem 2013. augusztus 31. napjáig. Ezen időszak
-      alatt megismerkedtem a klasszikus ügyvédi feladatok mindegyikével
-      (okiratszerkesztés, cégeljárás, követeléskezelés, civil szervezetekkel
-      kapcsolatos eljárások), és a peres eljárásokban is nagy gyakorlatra tettem
-      szert, mind a polgári, mind a büntető, mind pedig a közigazgatási jog
-      területén. <br /><br />
       2013. szeptember 1. napjától 2016. július 31. napjáig a Független
       Szakszervezetek Demokratikus Ligájánál (LIGA Szakszervezetek) dolgoztam
       kezdetben, mint megyei érdekvédelmi tanácsadó, majd nyugat-dunántúli
@@ -21,7 +39,9 @@
       októberében jeles eredménnyel szakvizsgáztam. Irodám Győrött, a belváros
       szívében, a Mosoni-Duna partján a 9022 Győr, Móricz Zsigmond rakpart 4.
       sz. alatt található, ahol imponzáns környezetben fogadom a hozzám
-      bizalommal forduló ügyfeleket.<br /><br />
+      bizalommal forduló ügyfeleket.
+    </p>
+    <p>
       2018-ban kitűnő eredménnyel elvégeztem a Pécsi Tudományegyetem Állam- és
       Jogtudományi Karának munkajogi szakjogász posztgraduális képzését, mely a
       Master of Law (LLM.) cím viselésére jogosít. Ügyvédi tevékenységem nem

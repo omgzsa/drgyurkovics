@@ -11,7 +11,7 @@ const navItems = ref([
   },
   {
     name: 'Rólam',
-    icon: 'fa:graduation-cap',
+    icon: 'fa-solid:book-reader',
     path: '/rolam',
   },
   {
@@ -38,14 +38,14 @@ const navItems = ref([
 </script>
 
 <template>
-  <nav class="md:flex md:h-screen">
+  <nav class="pb-4 md:pb-0 md:flex md:h-screen">
     <div class="flex flex-col items-center justify-between gap-4">
       <div class="inline-flex items-center justify-center p-2 mt-4 md:mt-0">
         <NavbarLogo :logo="logo" />
       </div>
 
       <div
-        class="flex items-center space-x-4 sm:space-x-6 md:flex-col md:space-x-0 md:space-y-4 xl:space-y-6"
+        class="flex items-center gap-x-5 xs:gap-x-6 md:flex-col md:gap-x-0 md:gap-y-4 xl:gap-y-6"
       >
         <NavbarItems
           v-for="item in navItems"

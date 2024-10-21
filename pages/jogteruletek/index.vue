@@ -39,14 +39,16 @@ const fields = ref([
 </script>
 
 <template>
-  <div class="space-y-6">
-    <h1>Szakterületeim</h1>
-    <FieldsItem
-      v-for="field in fields"
-      :key="field.id"
-      :title="field.name"
-      :icon="field.icon"
-      :content="field.content"
-    />
+  <div class="pt-8 space-y-6 md:pt-0">
+    <h1 class="md:pb-8"> Szakterületeim</h1>
+    <div class="space-y-10">
+      <FieldsItem
+        v-for="field in fields"
+        :key="field.id"
+        :title="field.name"
+        :icon="field.icon"
+        :content="field.content"
+      />
+    </div>
   </div>
 </template>

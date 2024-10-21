@@ -3,28 +3,28 @@ const bgImage = 'drgybence.jpg';
 </script>
 
 <template>
-  <div class="pt-8 space-y-6">
-    <NuxtImg 
-      :src="`../../${bgImage}`" 
-      alt="Dr. Gyurkovics Bence" 
-      class="z-0 block object-contain max-w-md mx-auto mb-6 rounded-full xl:hidden"
+  <div class="pt-8 pb-16 space-y-6">
+    <NuxtImg
+      src="../../drgybence.jpg"
+      alt="Dr. Gyurkovics Bence"
+      class="z-0 block object-cover object-center w-full mx-auto mb-6 rounded-md shadow zoom h-[450px] xl:hidden"
     />
     <h1>Rólam</h1>
     <div class="flex gap-6">
       <p>
         2011-ben végeztem Győrött, a Széchenyi István Egyetem Deák Ferenc Állam-
         és Jogtudományi Karán jogász szakon. Az egyetem elvégzését követően
-        ügyvédjelöltként tevékenykedtem 2013. augusztus 31. napjáig. Ezen időszak
-        alatt megismerkedtem a klasszikus ügyvédi feladatok mindegyikével
-        (okiratszerkesztés, cégeljárás, követeléskezelés, civil szervezetekkel
-        kapcsolatos eljárások), és a peres eljárásokban is nagy gyakorlatra tettem
-        szert, mind a polgári, mind a büntető, mind pedig a közigazgatási jog
-        területén.
+        ügyvédjelöltként tevékenykedtem 2013. augusztus 31. napjáig. Ezen
+        időszak alatt megismerkedtem a klasszikus ügyvédi feladatok
+        mindegyikével (okiratszerkesztés, cégeljárás, követeléskezelés, civil
+        szervezetekkel kapcsolatos eljárások), és a peres eljárásokban is nagy
+        gyakorlatra tettem szert, mind a polgári, mind a büntető, mind pedig a
+        közigazgatási jog területén.
       </p>
-      <NuxtImg 
-        :src="`../../${bgImage}`" 
-        alt="Dr. Gyurkovics Bence" 
-        class="z-0 hidden object-contain w-64 h-64 mx-auto mb-6 rounded-full xl:block"
+      <NuxtImg
+        :src="`../../${bgImage}`"
+        alt="Dr. Gyurkovics Bence"
+        class="z-0 hidden object-contain w-64 h-64 mx-auto mb-6 rounded-md shadow xl:block"
       />
     </div>
     <p>
@@ -51,3 +51,15 @@ const bgImage = 'drgybence.jpg';
     </p>
   </div>
 </template>
+
+<style>
+.zoom {
+  zoom: 90%;
+}
+
+@media (min-width: 640px) {
+  .zoom {
+    zoom: 120%;
+  }
+}
+</style>

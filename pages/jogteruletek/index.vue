@@ -39,7 +39,7 @@ const fields = ref([
 </script>
 
 <template>
-  <div class="pt-8 space-y-6 md:pt-0">
+  <div class="pt-8 pb-16 space-y-6 md:pt-0">
     <h1 class="md:pb-8"> Szakterületeim</h1>
     <div class="space-y-10">
       <FieldsItem

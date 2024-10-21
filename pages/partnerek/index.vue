@@ -8,7 +8,7 @@ const partners = ref([
 </script>
 
 <template>
-  <section class="pt-8">
+  <section class="pt-8 pb-16">
     <h1 class="">Partnereim</h1>
     <Partners>
       <PartnersItem 

@@ -13,6 +13,34 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
+  ssr: false,
+  nitro: {
+    prerender: {
+      routes: [
+        '/',
+        '/rolam',
+        '/partnerek',
+        '/jogteruletek',
+        '/media',
+        '/kapcsolat',
+        '/drgybence.jpg',
+        '/logo.png',
+        '/partners/mohacsy_lenard.webp',
+        '/partners/nagy_domokos.webp',
+        '/partners/ferenczi_milan.webp',
+        '/partners/nagy_geza.webp',
+        '/partners/papp_gabor.webp',
+        '/_ipx/../drgybence.jpg',
+        '/_ipx/../logo.png',
+        '/_ipx/../partners/mohacsy_lenard.webp',
+        '/_ipx/../partners/nagy_domokos.webp',
+        '/_ipx/../partners/ferenczi_milan.webp',
+        '/_ipx/../partners/nagy_geza.webp',
+        '/_ipx/../partners/papp_gabor.webp',
+      ],
+    },
+  },
+
   devtools: { enabled: true },
 
   modules: [
@@ -24,9 +52,10 @@ export default defineNuxtConfig({
   ],
 
   image: {
-    provider: 'netlify',
+    // provider: 'static',
+    domains: ['drgyurkovics.hu'],
   },
-  
+
   googleFonts: {
     prefetch: true,
     families: {
@@ -46,6 +75,12 @@ export default defineNuxtConfig({
         tailwindcss: {},
         autoprefixer: {},
       },
+    },
+  },
+
+  hooks: {
+    'prerender:routes'({ routes }) {
+      routes.clear(); // Do not generate any routes (except the defaults)
     },
   },
 

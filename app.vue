@@ -4,8 +4,8 @@ useHead({
     lang: 'hu',
   },
   charset: 'utf-8',
-  title: 'MY APP',
-  titleTemplate: (title) => (title !== 'MY APP' ? `${title} · MY APP` : title),
+  title: 'LL.M. dr. Gyurkovics Bence, ügyvéd',
+  titleTemplate: (title) => (title !== 'LL.M. dr. Gyurkovics Bence, ügyvéd' ? `${title} · LL.M. dr. Gyurkovics Bence, ügyvéd` : title),
   // meta: [],
 });
 </script>

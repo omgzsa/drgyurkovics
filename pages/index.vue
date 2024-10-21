@@ -40,12 +40,12 @@ const formattedDate = computed(() => {
     /> -->
     <div class="z-0 mb-6 space-y-4">
       <span
-        class="text-lg font-bold tracking-wide uppercase text-warning-100"
+        class="text-lg font-bold tracking-wide uppercase text-secondary-100"
         >Üdvözlöm az oldalamon!</span
       >
       <h1 class="pb-4">LL.M. dr. Gyurkovics Bence</h1>
       <span
-        class="text-sm font-normal tracking-widest uppercase lg:text-base text-warning-100"
+        class="text-sm font-normal tracking-widest uppercase lg:text-base text-secondary-100"
         >&mdash; munkajogi szakjogász</span
       >
     </div>
